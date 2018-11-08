@@ -14,4 +14,4 @@ def findMeanOfList():
    for i in range (number):
      data = int(input())
      list.append(data)
-   return max(set(list)), key=list.count)
+   return max(set(list), key=list.count)
