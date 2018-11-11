@@ -43,4 +43,6 @@ def test_lowerQuart_basic6():
 def test_lowerQuart_basic7():
     assert(lowerQuart([1, 2, 3, 4, 5, 6, 7]) == 2)
 
+def test_lowerQuart_basic8():
+    assert(lowerQuart([1, 2, 3, 4, 5, 6, 7, 8]) == 2.5)
 
