@@ -24,3 +24,6 @@ def test_median_unsortedlst():
 '''
 def test_lowerQuart_basic1():
     assert(lowerQuart([1]) == 1)
+
+def test_lowerQuart_basic2():
+    assert(lowerQuart([1, 2]) == 1)

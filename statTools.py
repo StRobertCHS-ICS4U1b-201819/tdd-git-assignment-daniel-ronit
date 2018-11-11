@@ -16,5 +16,12 @@ def median(numlist):
         return numlist[(0+(n-1))//2]
 '''
 def lowerQuart(numlist):
+    n = len(numlist)
 
-    return 1
+    if n == 1:
+        return numlist[0]
+
+    if n == 2:
+        return numlist[0]
+
+
