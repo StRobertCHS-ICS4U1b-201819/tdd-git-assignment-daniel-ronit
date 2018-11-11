@@ -15,3 +15,6 @@ def test_median_basic4():
 
 def test_median_basic5():
     assert(median([1, 2, 3, 4, 5]) == 3)
+
+def test_median_emptystr():
+    assert(median([]) == 0)

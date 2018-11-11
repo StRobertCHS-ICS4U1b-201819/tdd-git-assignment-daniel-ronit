@@ -2,6 +2,9 @@
 def median(listofnums):
     n = len(listofnums)
 
+    if n == 0:
+        return 0
+
     if n == 1:
         return listofnums[0]
 
@@ -10,3 +13,4 @@ def median(listofnums):
 
     else:
         return listofnums[(0+(n-1))//2]
+
