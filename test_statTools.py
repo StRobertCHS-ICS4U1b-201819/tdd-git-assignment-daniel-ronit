@@ -33,3 +33,6 @@ def test_lowerQuart_basic3():
 
 def test_lowerQuart_basic4():
     assert(lowerQuart([1, 2, 3, 4]) == 1.5)
+
+def test_lowerQuart_basic4():
+    assert(lowerQuart([1, 2, 3, 4, 5]) == 1.5)
