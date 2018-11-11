@@ -63,3 +63,5 @@ def test_upperQuart_basic1():
 def test_upperQuart_basic2():
     assert(upperQuart([1, 2]) == 2)
 
+def test_upperQuart_basic3():
+    assert(upperQuart([1, 2, 3]) == 3)
