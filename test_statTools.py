@@ -18,3 +18,6 @@ def test_median_basic5():
 
 def test_median_emptystr():
     assert(median([]) == 0)
+
+def test_median_unsortedlst():
+    assert(median([1, 9, 3, 6, 8]) == 6)
