@@ -28,4 +28,5 @@ def test_lowerQuart_basic1():
 def test_lowerQuart_basic2():
     assert(lowerQuart([1, 2]) == 1)
 
-
+def test_lowerQuart_basic3():
+    assert(lowerQuart([1, 2, 3]) == 1)
