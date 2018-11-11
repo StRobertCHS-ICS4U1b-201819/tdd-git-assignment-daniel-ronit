@@ -1,17 +1,18 @@
 
-def median(listofnums):
-    n = len(listofnums)
-    listofnums.sort()
+def median(numlist):
+    n = len(numlist)
+    numlist.sort()
 
     if n == 0:
         return 0
 
     if n == 1:
-        return listofnums[0]
+        return numlist[0]
 
     if n % 2 == 0:
-        return ((listofnums[n//2]) + (listofnums[(n//2)-1]))/2
+        return ((numlist[n//2]) + (numlist[(n//2)-1]))/2
 
     else:
-        return listofnums[(0+(n-1))//2]
+        return numlist[(0+(n-1))//2]
+
 
