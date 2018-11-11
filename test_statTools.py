@@ -23,7 +23,7 @@ def test_median_emptystr():
 
 def test_median_unsortedlst():
     assert(median([1, 9, 3, 6, 8]) == 6)
-'''
+
 #lowerQuart
 def test_lowerQuart_basic1():
     assert(lowerQuart([1]) == 1)
@@ -54,9 +54,8 @@ def test_lowerQuart_emptystr():
 
 def test_lowerQuart_unsortedlist():
     assert (lowerQuart([3, 1, 6, 7, 9, 4]) == 3)
-'''
-#upperQuart
 
+#upperQuart
+'''
 def test_upperQuart_basic1():
     assert (upperQuart([1]) == 1)
-'''
