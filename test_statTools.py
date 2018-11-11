@@ -1,6 +1,6 @@
 import pytest
 from statTools import *
-
+'''
 def test_median_basic1():
     assert(median([1]) == 1)
 
@@ -21,3 +21,6 @@ def test_median_emptystr():
 
 def test_median_unsortedlst():
     assert(median([1, 9, 3, 6, 8]) == 6)
+'''
+def test_lowerQuart_basic1():
+    assert(lowerQuart([1]) == 1)
