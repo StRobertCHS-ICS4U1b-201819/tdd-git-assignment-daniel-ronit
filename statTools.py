@@ -24,4 +24,5 @@ def lowerQuart(numlist):
     if n == 2:
         return numlist[0]
 
-
+    if n == 3:
+        return (numlist[0] + numlist[1])/2
