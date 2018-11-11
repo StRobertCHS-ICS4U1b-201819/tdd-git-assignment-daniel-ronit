@@ -58,4 +58,7 @@ def test_lowerQuart_unsortedlist():
 #upperQuart
 '''
 def test_upperQuart_basic1():
-    assert (upperQuart([1]) == 1)
+    assert(upperQuart([1]) == 1)
+
+def test_lowerQuart_basic2():
+    assert(upperQuart([1, 2]) == 2)

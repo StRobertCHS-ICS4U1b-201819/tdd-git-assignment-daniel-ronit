@@ -35,5 +35,6 @@ def lowerQuart(numlist):
         return numlist[(0 + (((n-1)//2)-1))//2]
 '''
 def upperQuart(numlist):
+    n = len(numlist)
 
-    return 1
+    return numlist[n-1]
