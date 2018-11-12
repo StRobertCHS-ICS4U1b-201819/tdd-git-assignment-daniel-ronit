@@ -34,8 +34,9 @@ def upperQuart(numlist):
     if n <= 3:
         return numlist[n-1]
 
-    if n == 4:
+    if n % 2 == 0:
         return (n + numlist[(n // 2)]) / 2
 
     if n == 5:
         return (numlist[n-1] + numlist[(n//2)+(n//4)]) / 2
+
