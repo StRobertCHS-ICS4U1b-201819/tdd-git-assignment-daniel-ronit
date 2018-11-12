@@ -74,3 +74,6 @@ def test_upperQuart_basic5():
 
 def test_upperQuart_basic6():
     assert(upperQuart([1, 2, 3, 4, 5, 6]) == 5)
+
+def test_upperQuart_basic7():
+    assert(upperQuart([1, 2, 3, 4, 5, 6, 7]) == 6)
