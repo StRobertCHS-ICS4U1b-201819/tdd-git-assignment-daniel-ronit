@@ -93,4 +93,7 @@ def test_upperQuart_unsortedlist():
 #range
 
 def test_range_basic1():
-    assert (range([1]) == 1)
+    assert(range([1]) == 1)
+
+def test_range_basic2():
+    assert(range([1, 2]) == 1)
