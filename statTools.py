@@ -30,6 +30,7 @@ def lowerQuart(numlist):
 
 def upperQuart(numlist):
     n = len(numlist)
+    numlist.sort()
 
     if n == 0:
         return ""

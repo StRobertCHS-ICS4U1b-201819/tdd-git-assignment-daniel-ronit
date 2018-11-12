@@ -86,3 +86,6 @@ def test_upperQuart_biggerlistremainder1():
 
 def test_upperQuart_emptystr():
     assert(upperQuart([]) == "")
+
+def test_upperQuart_unsortedlist():
+    assert (upperQuart([3, 1, 6, 7, 9, 4]) == 7)
