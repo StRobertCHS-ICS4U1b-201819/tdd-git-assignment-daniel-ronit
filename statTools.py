@@ -46,4 +46,8 @@ def upperQuart(numlist):
 
 def range(numlist):
 
-    return 1
+    if len(numlist) == 1:
+        return numlist[0]
+
+    else:
+        return numlist[(len(numlist)-1)] - numlist[0]

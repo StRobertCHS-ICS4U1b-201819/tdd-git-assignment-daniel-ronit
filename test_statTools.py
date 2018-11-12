@@ -97,3 +97,6 @@ def test_range_basic1():
 
 def test_range_basic2():
     assert(range([1, 2]) == 1)
+
+def test_range_basic2():
+    assert(range([1, 4, 6]) == 5)
