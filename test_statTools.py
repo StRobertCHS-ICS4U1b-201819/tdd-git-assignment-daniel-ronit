@@ -50,10 +50,10 @@ def test_lowerQuart_remainderof0pt2():
     assert(lowerQuart([1, 2, 3, 4, 5, 6, 7, 8]) == 2.5)
 
 def test_lowerQuart_emptystr():
-    assert (lowerQuart([]) == "")
+    assert(lowerQuart([]) == "")
 
 def test_lowerQuart_unsortedlist():
-    assert (lowerQuart([3, 1, 6, 7, 9, 4]) == 3)
+    assert(lowerQuart([3, 1, 6, 7, 9, 4]) == 3)
 
 #upperQuart
 
@@ -88,4 +88,9 @@ def test_upperQuart_emptystr():
     assert(upperQuart([]) == "")
 
 def test_upperQuart_unsortedlist():
-    assert (upperQuart([3, 1, 6, 7, 9, 4]) == 7)
+    assert(upperQuart([3, 1, 6, 7, 9, 4]) == 7)
+
+#range
+
+def test_range_basic1():
+    assert (range([1]) == 1)

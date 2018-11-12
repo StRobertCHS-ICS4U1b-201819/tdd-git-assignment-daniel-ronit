@@ -43,3 +43,7 @@ def upperQuart(numlist):
 
     else:
         return numlist[(n-1) - (n//4)]
+
+def range(numlist):
+
+    return 1
