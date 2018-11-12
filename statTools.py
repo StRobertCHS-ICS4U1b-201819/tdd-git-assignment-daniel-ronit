@@ -31,17 +31,14 @@ def lowerQuart(numlist):
 def upperQuart(numlist):
     n = len(numlist)
 
+    if n == 0:
+        return ""
+
     if n == 1:
         return numlist[0]
 
-    if n % 4 == 0:
+    if n % 4 == 0 or n % 4 == 1:
         return (numlist[(n-1)-(n//4)+1] + numlist[(n-1)-(n//4)]) / 2
 
-    if n % 4 == 1:
-        return (numlist[(n-1)-(n//4)+1] + numlist[(n-1)-(n//4)]) / 2
-
-    if n % 4 == 2:
-        return numlist[(n-1) - (n//4)]
-
-    if n % 4 == 3:
+    else:
         return numlist[(n-1) - (n//4)]

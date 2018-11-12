@@ -72,14 +72,17 @@ def test_upperQuart_basic4():
 def test_upperQuart_basic5():
     assert(upperQuart([1, 2, 3, 4, 5]) == 4.5)
 
-def test_upperQuart_basic6():
+def test_upperQuart_biggerlistremainder2():
     assert(upperQuart([1, 2, 3, 4, 5, 6]) == 5)
 
-def test_upperQuart_basic7():
+def test_upperQuart_biggerlistremainder3():
     assert(upperQuart([1, 2, 3, 4, 5, 6, 7]) == 6)
 
-def test_upperQuart_basic8():
+def test_upperQuart_biggerlistremainder0():
     assert(upperQuart([1, 2, 3, 4, 5, 6, 7, 8]) == 6.5)
 
-def test_upperQuart_basic9():
+def test_upperQuart_biggerlistremainder1():
     assert(upperQuart([1, 2, 3, 4, 5, 6, 7, 8, 9]) == 7.5)
+
+def test_upperQuart_emptystr():
+    assert(upperQuart([]) == "")
