@@ -1,4 +1,4 @@
-'''
+
 def median(numlist):
     n = len(numlist)
     numlist.sort()
@@ -22,18 +22,12 @@ def lowerQuart(numlist):
     if n == 0:
         return ""
 
-    if n % 4 == 0:
+    if n % 4 == 0 or n % 4 == 1:
         return (numlist[n//4] + numlist[(n//4)-1]) / 2
 
-    if n % 4 == 1:
-        return (numlist[(n-1)//4] + numlist[((n-1)//4)-1]) / 2
+    else:
+        return numlist[(0 + ((n//2)-1))//2]
 
-    if n % 4 == 2:
-        return numlist[(0 + ((n//2)-1)//2)]
-
-    if n % 4 == 3:
-        return numlist[(0 + (((n-1)//2)-1))//2]
-'''
 def upperQuart(numlist):
     n = len(numlist)
 
@@ -42,3 +36,6 @@ def upperQuart(numlist):
 
     if n == 4:
         return (n + numlist[(n // 2)]) / 2
+
+    if n == 5:
+        return (numlist[n-1] + numlist[(n//2)+(n//4)]) / 2

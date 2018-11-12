@@ -2,7 +2,7 @@ import pytest
 from statTools import *
 
 #median
-'''
+
 def test_median_basic1():
     assert(median([1]) == 1)
 
@@ -56,7 +56,7 @@ def test_lowerQuart_unsortedlist():
     assert (lowerQuart([3, 1, 6, 7, 9, 4]) == 3)
 
 #upperQuart
-'''
+
 def test_upperQuart_basic1():
     assert(upperQuart([1]) == 1)
 
@@ -69,3 +69,5 @@ def test_upperQuart_basic3():
 def test_upperQuart_basic3():
     assert(upperQuart([1, 2, 3, 4]) == 3.5)
 
+def test_upperQuart_basic4():
+    assert(upperQuart([1, 2, 3, 4, 5]) == 4.5)
