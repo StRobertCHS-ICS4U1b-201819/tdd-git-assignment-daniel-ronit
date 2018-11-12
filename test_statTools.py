@@ -103,3 +103,6 @@ def test_range_basic2():
 
 def test_range_emptystr():
     assert (range([]) == "")
+
+def test_range_unsortedlist():
+    assert (range([5, 7, 1, 3, 9, 4, 10, 25]) == 24)
