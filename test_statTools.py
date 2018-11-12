@@ -100,3 +100,6 @@ def test_range_basic2():
 
 def test_range_basic2():
     assert(range([1, 4, 6]) == 5)
+
+def test_range_emptystr():
+    assert (range([]) == "")
