@@ -25,6 +25,7 @@ def test_median_unsortedlst():
     assert(median([1, 9, 3, 6, 8]) == 6)
 
 #lowerQuart
+
 def test_lowerQuart_basic1():
     assert(lowerQuart([1]) == 1)
 
@@ -85,10 +86,18 @@ def test_upperQuart_biggerlistremainder1():
     assert(upperQuart([1, 2, 3, 4, 5, 6, 7, 8, 9]) == 7.5)
 
 def test_upperQuart_emptystr():
-    assert(upperQuart([]) == "")
+    assert(upperQuart([]) is None)
 
 def test_upperQuart_unsortedlist():
     assert(upperQuart([3, 1, 6, 7, 9, 4]) == 7)
+
+def test_upperQuart_notalist():
+    with pytest.raises(TypeError) as errmsg:
+        upperQuart(1)
+    assert ("Error: non-negative int entered" == str(errmsg.value))
+
+
+
 
 #range
 
