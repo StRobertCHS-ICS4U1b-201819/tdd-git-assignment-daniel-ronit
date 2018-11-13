@@ -120,7 +120,12 @@ def test_range_emptystr():
 def test_range_unsortedlist():
     assert (range([5, 7, 1, 3, 9, 4, 10, 25]) == 24)
 
-def test_range_notalist1():
+def test_range_notalist():
     with pytest.raises(TypeError) as errmsg:
         range(1)
+    assert ("Error: non-list value entered" == str(errmsg.value))
+
+def test_range_notalist1():
+    with pytest.raises(TypeError) as errmsg:
+        range(["a", "e", "o"])
     assert ("Error: non-list value entered" == str(errmsg.value))
