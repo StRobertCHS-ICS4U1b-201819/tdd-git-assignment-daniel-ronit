@@ -1,29 +1,41 @@
 
 def median(numlist):
-    n = len(numlist)
-    numlist.sort()
+    try:
+        n = len(numlist)
+        exception_raiser = sum(numlist)
+        numlist.sort()
 
-    if n == 0:
-        return ""
+        if n == 0:
+            return ""
 
-    if n % 2 == 0:
-        return ((numlist[n//2]) + (numlist[(n//2)-1]))/2
+        if n % 2 == 0:
+            return ((numlist[n//2]) + (numlist[(n//2)-1]))/2
 
-    else:
-        return numlist[(n-1)//2]
+        else:
+            return numlist[(n-1)//2]
+
+    except TypeError:
+        raise TypeError("Error: non-list value entered")
+
 
 def lowerQuart(numlist):
-    n = len(numlist)
-    numlist.sort()
+    try:
+        n = len(numlist)
+        exception_raiser = sum(numlist)
+        numlist.sort()
 
-    if n == 0:
-        return ""
+        if n == 0:
+            return ""
 
-    if n % 4 == 0 or n % 4 == 1:
-        return (numlist[n//4] + numlist[(n // 4) - 1]) / 2
+        if n % 4 == 0 or n % 4 == 1:
+            return (numlist[n//4] + numlist[(n // 4) - 1]) / 2
 
-    else:
-        return numlist[((n//2) - 1)//2]
+        else:
+            return numlist[((n//2) - 1)//2]
+
+    except TypeError:
+        raise TypeError("Error: non-list value entered")
+
 
 def upperQuart(numlist):
     try:
@@ -42,6 +54,7 @@ def upperQuart(numlist):
 
         else:
             return numlist[(n-1) - (n//4)]
+
     except TypeError:
         raise TypeError("Error: non-int list value entered")
 

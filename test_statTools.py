@@ -24,6 +24,17 @@ def test_median_emptystr():
 def test_median_unsortedlst():
     assert(median([1, 9, 3, 6, 8]) == 6)
 
+def test_median_notalist():
+    with pytest.raises(TypeError) as errmsg:
+        median(1)
+    assert ("Error: non-list value entered" == str(errmsg.value))
+
+def test_median_listofstrings():
+    with pytest.raises(TypeError) as errmsg:
+        median(["a", "e", "i"])
+    assert ("Error: non-list value entered" == str(errmsg.value))
+
+
 #lowerQuart
 
 def test_lowerQuart_basic1():
@@ -55,6 +66,16 @@ def test_lowerQuart_emptystr():
 
 def test_lowerQuart_unsortedlist():
     assert(lowerQuart([3, 1, 6, 7, 9, 4]) == 3)
+
+def test_lowerQuart_notalist():
+    with pytest.raises(TypeError) as errmsg:
+        lowerQuart(1)
+    assert ("Error: non-list value entered" == str(errmsg.value))
+
+def test_lowerQuart_listofstrings():
+    with pytest.raises(TypeError) as errmsg:
+        lowerQuart(["a", "e", "i"])
+    assert ("Error: non-list value entered" == str(errmsg.value))
 
 #upperQuart
 
@@ -125,7 +146,7 @@ def test_range_notalist():
         range(1)
     assert ("Error: non-list value entered" == str(errmsg.value))
 
-def test_range_notalist1():
+def test_range_listofstrings():
     with pytest.raises(TypeError) as errmsg:
         range(["a", "e", "o"])
     assert ("Error: non-list value entered" == str(errmsg.value))
