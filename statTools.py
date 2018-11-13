@@ -32,7 +32,7 @@ def findStandardDeviation(list):
   number = 0
   for i in list:
     number += (average - i) * (average - i)
-  return round(math.sqrt(total / len(list)) 
+  return round(math.sqrt(number / len(list)) 
 
 
  
