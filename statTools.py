@@ -6,9 +6,6 @@ def median(numlist):
     if n == 0:
         return ""
 
-    if n == 1:
-        return numlist[0]
-
     if n % 2 == 0:
         return ((numlist[n//2]) + (numlist[(n//2)-1]))/2
 
@@ -46,18 +43,22 @@ def upperQuart(numlist):
         else:
             return numlist[(n-1) - (n//4)]
     except TypeError:
-        raise TypeError("Error: non-negative int entered")
+        raise TypeError("Error: non-int list value entered")
 
 
 def range(numlist):
-    n = len(numlist)
-    numlist.sort()
+    try:
+        n = len(numlist)
+        numlist.sort()
 
-    if n == 0:
-        return ""
+        if n == 0:
+            return ""
 
-    if n == 1:
-        return numlist[0]
+        if n == 1:
+            return numlist[0]
 
-    else:
-        return numlist[n-1] - numlist[0]
+        else:
+            return numlist[n-1] - numlist[0]
+
+    except TypeError:
+        raise TypeError('Error: non-list value entered')

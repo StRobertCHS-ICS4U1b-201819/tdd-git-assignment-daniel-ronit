@@ -94,12 +94,12 @@ def test_upperQuart_unsortedlist():
 def test_upperQuart_notalist():
     with pytest.raises(TypeError) as errmsg:
         upperQuart(1)
-    assert ("Error: non-negative int entered" == str(errmsg.value))
+    assert ("Error: non-int list value entered" == str(errmsg.value))
 
 def test_upperQuart_listofstrings():
     with pytest.raises(TypeError) as errmsg:
         upperQuart(["a", "e", "i"])
-    assert ("Error: non-negative int entered" == str(errmsg.value))
+    assert ("Error: non-int list value entered" == str(errmsg.value))
 
 
 
@@ -119,3 +119,8 @@ def test_range_emptystr():
 
 def test_range_unsortedlist():
     assert (range([5, 7, 1, 3, 9, 4, 10, 25]) == 24)
+
+def test_range_notalist1():
+    with pytest.raises(TypeError) as errmsg:
+        range(1)
+    assert ("Error: non-list value entered" == str(errmsg.value))
