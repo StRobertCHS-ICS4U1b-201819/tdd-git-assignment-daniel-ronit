@@ -96,6 +96,10 @@ def test_upperQuart_notalist():
         upperQuart(1)
     assert ("Error: non-negative int entered" == str(errmsg.value))
 
+def test_upperQuart_listofstrings():
+    with pytest.raises(TypeError) as errmsg:
+        upperQuart(["a", "e", "i"])
+    assert ("Error: non-negative int entered" == str(errmsg.value))
 
 
 
