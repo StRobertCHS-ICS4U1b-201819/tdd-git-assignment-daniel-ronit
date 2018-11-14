@@ -17,7 +17,7 @@ The functions you are responsible for implementing are:
 
 * range
 * lower quartile
-* upper quartile
+* upper quartile 
 * variance
 * standard deviation
 
