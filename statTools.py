@@ -130,19 +130,3 @@ def range(numlist):
    except TypeError:
        #raise error when anything other than a list is entered
        raise TypeError('Error: non-list value entered')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
